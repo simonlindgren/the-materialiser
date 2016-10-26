@@ -7,4 +7,11 @@ Stuff you need to run The Materialiser:
 * Non-standard libraries: pandas and spaCy
 * A txt file named dataset.txt with a social media post (tweet or similar) on each line
 
-[Video](https://www.youtube.com/watch?v=adAo0VBBbwE) about The Materialiser.
+Running The Materialiser:
+* With materialiser.py and dataset.txt in the same working directory  
+	    $ python materialiser.py
+* Follow the on-screen instructions
+
+[Video][1] about The Materialiser.
+
+[1]:	https://www.youtube.com/watch?v=adAo0VBBbwE
