@@ -1,6 +1,6 @@
 # The Materialiser
 
-Python script for cleaning social media posts (tweets), extracting Named Entities and Noun Phrases, and generating a csv file of co-occurrence pairs for use in network analysis.
+Python script for cleaning social media posts (tweets), extracting Named Entities and Noun Phrases, and generating a csv file of co-occurrence pairs, for use in network analysis.
 
 Stuff you need to run The Materialiser:
 * Python 2.7
