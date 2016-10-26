@@ -11,8 +11,8 @@ print 'Getting ready to materialise. Please wait ...'
 
 
 # Fix some character encoding stuff
-import sys  
-reload(sys)  
+import sys
+reload(sys)
 sys.setdefaultencoding('utf8')
 
 # Import modules
@@ -102,7 +102,7 @@ raw_input("Press Enter to extract Named Entities and Noun Phrases...")
 
 # Add the items (lines) to a list
 datalist = []
-for line in infile: 
+for line in infile:
 	datalist.append(line)
 
 # Set an item counter
@@ -119,7 +119,7 @@ for item in datalist:
 	# Write NER stuff
 	ents = list(parsed.ents)
 	for entity in ents:
-		
+
 		#outfile.write(str(itemnumber) + '\t' + ' '.join(t.orth_ for t in entity) + '\t' + entity.label_ + '\n')
 		# Let's write to outfile without entity labels
 		outfile.write(str(itemnumber) + '\t' + ' '.join(t.orth_ for t in entity) + '\n')
@@ -130,7 +130,7 @@ for item in datalist:
 
 print ''
 print 'Named Entities and Noun Phrases have been secured!'
-print ''	
+print ''
 
 outfile.close()
 
@@ -146,7 +146,7 @@ nospace_file.write(nospace_text)
 nospace_file.close()
 
 # Make pairs
-# Get the tokens and use itertools.groupby with first column as key to group items 
+# Get the tokens and use itertools.groupby with first column as key to group items
 # with same first column
 # Once you have that, filter out the lists with one 1 item, and apply a combination on the rest.
 with open('nospace.txt') as f:
