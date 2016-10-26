@@ -3,11 +3,11 @@ print ''
 print ''
 print '========================'
 print ''
-print 'M A T E R I A L I Z E R'
+print 'M A T E R I A L I S E R'
 print ''
 print '========================'
 print ''
-print 'Getting ready to materialize. Please wait ...'
+print 'Getting ready to materialise. Please wait ...'
 
 
 # Fix some character encoding stuff
@@ -135,7 +135,7 @@ print ''
 outfile.close()
 
 #(4) Generate pairs
-raw_input("Press Enter to generate a list of Materializer(TM) pairs ...")
+raw_input("Press Enter to generate a list of Materialiser(TM) pairs ...")
 
 # Remove spaces
 materialised_data = open('output-data.csv', 'r')
@@ -159,5 +159,5 @@ with open('nospace.txt') as f:
 					cw.writerow(c)
 
 print ''
-print 'Enjoy the materialized pairs!'
+print 'Enjoy the materialised pairs!'
 print ''
